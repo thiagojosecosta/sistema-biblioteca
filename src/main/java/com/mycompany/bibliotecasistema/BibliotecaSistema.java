@@ -4,10 +4,6 @@
 
 package com.mycompany.bibliotecasistema;
 
-/**
- *
- * @author daitkass
- */
 public class BibliotecaSistema {
 
     public static void main(String[] args) {
