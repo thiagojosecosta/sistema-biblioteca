@@ -4,6 +4,14 @@ public class Aluno extends Usuario {
 
     private String curso;
 
+    public Aluno() {
+    }
+
+    public Aluno(String nome, String matricula, String curso) {
+        super(nome, matricula);
+        this.curso = curso;
+    }
+
     public String getCurso() {
         return curso;
     }
@@ -15,6 +23,6 @@ public class Aluno extends Usuario {
     @Override
     public void exibirDados() {
         super.exibirDados();
-        System.err.println("Curso: " + curso);
+        System.out.println("Curso: " + curso);
     }
 }

@@ -24,6 +24,15 @@ public class Biblioteca {
         usuarios.remove(usuario);
     }
 
+    public Livro buscarPorTitulo(String titulo) {
+        for (Livro l : acervo) {
+            if (l.getTitulo().equalsIgnoreCase(titulo)) {
+                return l;
+            }
+        }
+        return null;
+    }
+
     public List<Livro> getAcervo() {
         return acervo;
     }
