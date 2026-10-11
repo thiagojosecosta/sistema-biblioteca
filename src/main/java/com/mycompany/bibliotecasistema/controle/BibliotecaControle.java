@@ -5,14 +5,14 @@ import com.mycompany.bibliotecasistema.modelo.Biblioteca;
 import com.mycompany.bibliotecasistema.modelo.Livro;
 import com.mycompany.bibliotecasistema.modelo.Professor;
 import com.mycompany.bibliotecasistema.modelo.Usuario;
-import com.mycompany.bibliotecasistema.visao.BibliotecaView;
+import com.mycompany.bibliotecasistema.visao.BibliotecaVisao;
 
 public class BibliotecaControle {
 
     private final Biblioteca biblioteca;
-    private final BibliotecaView view;
+    private final BibliotecaVisao view;
 
-    public BibliotecaControle(Biblioteca biblioteca, BibliotecaView view) {
+    public BibliotecaControle(Biblioteca biblioteca, BibliotecaVisao view) {
         this.biblioteca = biblioteca;
         this.view = view;
     }
