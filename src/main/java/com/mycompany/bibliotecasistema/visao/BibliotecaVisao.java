@@ -3,7 +3,7 @@ package com.mycompany.bibliotecasistema.visao;
 import com.mycompany.bibliotecasistema.modelo.Livro;
 import com.mycompany.bibliotecasistema.modelo.Usuario;
 
-public class BibliotecaView {
+public class BibliotecaVisao {
 
     public void exibirMensagem(String mensagem) {
         System.out.println(mensagem);
