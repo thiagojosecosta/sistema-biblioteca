@@ -5,6 +5,14 @@ public class Usuario {
     private String nome;
     private String matricula;
 
+    public Usuario() {
+    }
+
+    public Usuario(String nome, String matricula) {
+        this.nome = nome;
+        this.matricula = matricula;
+    }
+
     public String getNome() {
         return nome;
     }
@@ -22,7 +30,7 @@ public class Usuario {
     }
     
     public void exibirDados() {
-        System.err.println("Nome: " + nome);
-        System.err.println("Matrícula:" + matricula);
+        System.out.println("Nome: " + nome);
+        System.out.println("Matrícula:" + matricula);
     }
 }
