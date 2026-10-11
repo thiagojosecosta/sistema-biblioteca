@@ -7,12 +7,12 @@ import com.mycompany.bibliotecasistema.modelo.Professor;
 import com.mycompany.bibliotecasistema.modelo.Usuario;
 import com.mycompany.bibliotecasistema.visao.BibliotecaView;
 
-public class BibliotecaController {
+public class BibliotecaControle {
 
     private final Biblioteca biblioteca;
     private final BibliotecaView view;
 
-    public BibliotecaController(Biblioteca biblioteca, BibliotecaView view) {
+    public BibliotecaControle(Biblioteca biblioteca, BibliotecaView view) {
         this.biblioteca = biblioteca;
         this.view = view;
     }
