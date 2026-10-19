@@ -8,20 +8,20 @@ public class BibliotecaSistema {
 
     public static void main(String[] args) {
         Biblioteca biblioteca = new Biblioteca();
-        BibliotecaVisao view = new BibliotecaVisao();
-        BibliotecaControle controller = new BibliotecaControle(biblioteca, view);
+        BibliotecaVisao visao = new BibliotecaVisao();
+        BibliotecaControle controle = new BibliotecaControle(biblioteca, visao);
 
-        controller.cadastrarAluno("Maria Silva", "2024001", "Sistemas de Informação");
-        controller.cadastrarProfessor("João Motta", "P0001", "Computação");
+        controle.cadastrarAluno("Maria Silva", "2024001", "Sistemas de Informação");
+        controle.cadastrarProfessor("João Motta", "P0001", "Computação");
 
-        controller.cadastrarLivro("Clean Code", "Robert C. Martin", 2008);
-        controller.cadastrarLivro("Dom Casmurro", "Machado de Assis", 1899);
-        controller.cadastrarLivro("Use a Cabeça! Padrões de Projeto", "Freeman & Robson", 2009);
+        controle.cadastrarLivro("Clean Code", "Robert C. Martin", 2008);
+        controle.cadastrarLivro("Dom Casmurro", "Machado de Assis", 1899);
+        controle.cadastrarLivro("Use a Cabeça! Padrões de Projeto", "Freeman & Robson", 2009);
 
-        controller.listarUsuarios();
-        controller.listarAcervo();
+        controle.listarUsuarios();
+        controle.listarAcervo();
 
-        controller.buscarLivro("Dom Casmurro");
-        controller.buscarLivro("Livro Inexistente");
+        controle.buscarLivro("Dom Casmurro");
+        controle.buscarLivro("Livro Inexistente");
     }
 }
