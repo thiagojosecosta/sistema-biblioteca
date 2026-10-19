@@ -31,6 +31,6 @@ public class Usuario {
     
     public void exibirDados() {
         System.out.println("Nome: " + nome);
-        System.out.println("Matrícula:" + matricula);
+        System.out.println("Matrícula: " + matricula);
     }
 }
