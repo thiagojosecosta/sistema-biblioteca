@@ -23,6 +23,7 @@ public class BibliotecaSistema {
         controle.listarUsuarios();
         controle.listarAcervo();
 
+        // Demonstra a busca por um livro cadastrado e por um título ausente no acervo.
         controle.buscarLivro("Dom Casmurro");
         controle.buscarLivro("Livro Inexistente");
     }
