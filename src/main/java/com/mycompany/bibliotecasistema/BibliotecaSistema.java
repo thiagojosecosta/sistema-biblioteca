@@ -2,12 +2,14 @@ package com.mycompany.bibliotecasistema;
 
 import com.mycompany.bibliotecasistema.controle.BibliotecaControle;
 import com.mycompany.bibliotecasistema.modelo.Biblioteca;
+import com.mycompany.bibliotecasistema.persistencia.LivroDAO;
+import com.mycompany.bibliotecasistema.persistencia.UsuarioDAO;
 import com.mycompany.bibliotecasistema.visao.BibliotecaVisao;
 
 public class BibliotecaSistema {
 
     public static void main(String[] args) {
-        Biblioteca biblioteca = new Biblioteca();
+        Biblioteca biblioteca = new Biblioteca(new LivroDAO(), new UsuarioDAO());
         BibliotecaVisao visao = new BibliotecaVisao();
         BibliotecaControle controle = new BibliotecaControle(biblioteca, visao);
 

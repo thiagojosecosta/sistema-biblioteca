@@ -19,20 +19,29 @@ public class BibliotecaControle {
 
     public void cadastrarLivro(String titulo, String autor, int ano) {
         Livro livro = new Livro(titulo, autor, ano);
-        biblioteca.adicionarLivro(livro);
-        view.exibirMensagem("Livro cadastrado: " + livro);
+        if (biblioteca.adicionarLivro(livro)) {
+            view.exibirMensagem("Livro cadastrado: " + livro);
+        } else {
+            view.exibirMensagem("Livro já cadastrado: " + livro);
+        }
     }
 
     public void cadastrarAluno(String nome, String matricula, String curso) {
         Aluno aluno = new Aluno(nome, matricula, curso);
-        biblioteca.adicionarUsuario(aluno);
-        view.exibirMensagem("Aluno cadastrado: " + nome);
+        if (biblioteca.adicionarUsuario(aluno)) {
+            view.exibirMensagem("Aluno cadastrado: " + nome);
+        } else {
+            view.exibirMensagem("Matrícula já cadastrada: " + matricula);
+        }
     }
 
     public void cadastrarProfessor(String nome, String matricula, String departamento) {
         Professor professor = new Professor(nome, matricula, departamento);
-        biblioteca.adicionarUsuario(professor);
-        view.exibirMensagem("Professor cadastrado: " + nome);
+        if (biblioteca.adicionarUsuario(professor)) {
+            view.exibirMensagem("Professor cadastrado: " + nome);
+        } else {
+            view.exibirMensagem("Matrícula já cadastrada: " + matricula);
+        }
     }
 
     public void listarAcervo() {
