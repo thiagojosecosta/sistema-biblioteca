@@ -1,0 +1,4 @@
+CREATE DATABASE biblioteca ENCODING 'UTF8';
+
+CREATE USER biblioteca_user WITH PASSWORD 'troque_esta_senha';
+GRANT ALL PRIVILEGES ON DATABASE biblioteca TO biblioteca_user;

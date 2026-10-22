@@ -1,0 +1,20 @@
+CREATE TABLE IF NOT EXISTS livros (
+    id SERIAL PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    ano INT NOT NULL,
+    disponivel BOOLEAN NOT NULL DEFAULT TRUE,
+    UNIQUE (titulo, autor)
+);
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    matricula VARCHAR(20) NOT NULL UNIQUE,
+    tipo VARCHAR(10) NOT NULL CHECK (tipo IN ('ALUNO', 'PROFESSOR')),
+    curso VARCHAR(100),
+    departamento VARCHAR(100)
+);
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO biblioteca_user;
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO biblioteca_user;
