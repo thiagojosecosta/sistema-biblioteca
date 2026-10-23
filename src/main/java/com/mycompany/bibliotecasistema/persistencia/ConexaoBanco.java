@@ -27,6 +27,6 @@ public class ConexaoBanco {
 
     private static String valor(String variavel, String padrao) {
         String valor = System.getenv(variavel);
-        return valor == null ? padrao : valor;
+        return valor == null || valor.isEmpty() ? padrao : valor;
     }
 }
