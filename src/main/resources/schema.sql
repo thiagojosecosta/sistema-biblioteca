@@ -16,5 +16,14 @@ CREATE TABLE IF NOT EXISTS usuarios (
     departamento VARCHAR(100)
 );
 
+CREATE TABLE IF NOT EXISTS emprestimos (
+    id SERIAL PRIMARY KEY,
+    id_livro INT NOT NULL REFERENCES livros (id),
+    id_usuario INT NOT NULL REFERENCES usuarios (id),
+    data_emprestimo DATE NOT NULL,
+    data_devolucao_prevista DATE NOT NULL,
+    data_devolucao DATE
+);
+
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO biblioteca_user;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO biblioteca_user;

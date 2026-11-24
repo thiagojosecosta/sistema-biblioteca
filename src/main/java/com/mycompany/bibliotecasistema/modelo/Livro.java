@@ -2,6 +2,7 @@ package com.mycompany.bibliotecasistema.modelo;
 
 public class Livro {
 
+    private int id;
     private String titulo;
     private String autor;
     private int ano;
@@ -14,6 +15,14 @@ public class Livro {
         this.titulo = titulo;
         this.autor = autor;
         this.ano = ano;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitulo() {
