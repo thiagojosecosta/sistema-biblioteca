@@ -5,6 +5,7 @@
   <img src="https://img.shields.io/badge/Build-Maven-C71A36?logo=apachemaven&logoColor=white" alt="Build: Maven">
   <img src="https://img.shields.io/badge/Banco-PostgreSQL-4169E1?logo=postgresql&logoColor=white" alt="Banco: PostgreSQL">
   <img src="https://img.shields.io/badge/IDE-NetBeans-1B6AC6?logo=apachenetbeanside&logoColor=white" alt="IDE: NetBeans">
+  <img src="https://img.shields.io/badge/Interface-Swing%20%2B%20FlatLaf-2563EB?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIj48cmVjdCB4PSIzIiB5PSI0IiB3aWR0aD0iMTgiIGhlaWdodD0iMTYiIHJ4PSIyIi8+PHBhdGggZD0iTTMgOWgxOE05IDl2MTEiLz48L3N2Zz4=" alt="Interface: Swing + FlatLaf">
 </p>
 
 Sistema de biblioteca simples em Java, desenvolvido em sala de aula na disciplina de Programação de Computadores 3 (Sistemas de Informação, IFPR). O projeto ainda está em desenvolvimento.
