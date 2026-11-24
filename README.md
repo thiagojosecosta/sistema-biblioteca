@@ -35,3 +35,10 @@ Sistema de biblioteca simples em Java, desenvolvido em sala de aula na disciplin
 - Driver do PostgreSQL adicionado no Maven.
 - Scripts SQL para criar o banco, o usuário e as tabelas de livros e usuários.
 - ConexaoBanco: abre a conexão com o banco usando JDBC.
+
+### Interface gráfica
+- Telas em Swing com o tema FlatLaf, no lugar da saída no terminal.
+- Menu lateral com Início, Livros, Usuários e Empréstimos.
+- Cadastro, edição, exclusão e busca de livros e usuários.
+- Empréstimo e devolução de livros, com limite e prazo diferentes para aluno e professor.
+- Tabela de empréstimos adicionada ao banco.
